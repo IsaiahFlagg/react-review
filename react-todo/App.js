@@ -26,8 +26,5 @@ export default function App() {
     )
   }
 
-
-
-
 }
 
