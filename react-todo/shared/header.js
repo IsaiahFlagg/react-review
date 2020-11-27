@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
-import { Directions } from 'react-native-gesture-handler';
+import { Directions } from 'react-native-gesture-handler'; 
 
 export default function Header({ navigation, title }) {
 
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     },
     icon: {
         position: 'absolute',
-        left: -50
+        left: 10
     },
     headerImage: {
         width: 26,
