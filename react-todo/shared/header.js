@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
-import { Directions } from 'react-native-gesture-handler'; 
+import { Directions } from 'react-native-gesture-handler';
 
 export default function Header({ navigation, title }) {
 
@@ -9,13 +9,16 @@ export default function Header({ navigation, title }) {
         navigation.openDrawer();
     }
 
+
+
     return (
         <ImageBackground source={require('../assets/game_bg.png')} style={styles.header}>
             <MaterialIcons name='menu' size={28} onPress={openMenu} style={styles.icon} />
             <View style={styles.headerTitle}>
-                <Image source={require('../assets/heart_logo.png')} style={styles.headerImage}/>
-                <Text style={styles.headerText}>{ title }</Text>
+                <Image source={require('../assets/heart_logo.png')} style={styles.headerImage} />
+                <Text style={styles.headerText}>{title}</Text>
             </View>
+
         </ImageBackground>
     );
 }
@@ -45,6 +48,8 @@ const styles = StyleSheet.create({
     },
     headerTitle: {
         flexDirection: 'row',
+
+
     }
 
 

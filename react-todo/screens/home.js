@@ -4,6 +4,7 @@ import { FlatList } from "react-native-gesture-handler";
 import { globalStyles } from '../styles/global';
 import Card from '../shared/card';
 import { MaterialIcons } from '@expo/vector-icons';
+import ReviewForm from './reviewForm'
 
 export default function Home({ navigation }) {
     const [modalOpen, setModalOpen] = useState(false);
@@ -13,7 +14,13 @@ export default function Home({ navigation }) {
         { title: 'Not So "Final" Fantasy', rating: 3, body: 'lorem ipsum', key: '3' }
     ]);
 
-
+    const addReview = (review) => {
+        review.key = Math.random().toString();
+        setReviews((currentReviews) => {
+            return [review, ...currentReviews];
+        });
+        setModalOpen(false);
+    }
 
     return (
         <View style={globalStyles.container}>
@@ -26,7 +33,7 @@ export default function Home({ navigation }) {
                         style={{...styles.modalToggle, ...styles.modalClose}}
                         onPress={() => setModalOpen(false)}
                     />
-                    <Text>Hello from the modal</Text>
+                    <ReviewForm />
                 </View>
             </Modal>
 
