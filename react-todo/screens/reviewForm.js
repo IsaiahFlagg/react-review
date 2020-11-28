@@ -46,7 +46,7 @@ export default function ReviewForm({ addReview }) {
                         <Text style={globalStyles.errorText}>{props.touched.title && props.errors.title}</Text>
 
                         <TextInput
-                            multiline
+                            multiline minHeight={60}
                             style={globalStyles.input}
                             placeholder='Review body'
                             onChangeText={props.handleChange('body')}
@@ -64,7 +64,7 @@ export default function ReviewForm({ addReview }) {
                             onBlur={props.handleBlur('rating')}
                         />
                         <Text style={globalStyles.errorText}>{props.touched.rating && props.errors.rating}</Text>
-                        <FlatButton text='submit' onPress={props.handleSubmit}/>
+                        <FlatButton text='submit' onPress={props.handleSubmit} />
 
                     </View>
 
