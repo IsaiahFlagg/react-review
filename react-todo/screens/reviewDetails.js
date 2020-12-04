@@ -10,7 +10,7 @@ export default function ReviewDetails({ navigation }) {
     return (
         <View style={globalStyles.container}>
             <Card>
-                <Text>{navigation.getParam('title')}</Text>
+                <Text style={StyleSheet.cardTitleText}>{navigation.getParam('title')}</Text>
                 <Text>{navigation.getParam('body')}</Text>
                 <View style={styles.rating}>
                     <Text>GameZone rating: </Text>
@@ -29,5 +29,6 @@ const styles= StyleSheet.create({
         marginTop: 16,
         borderTopWidth: 1,
         borderTopColor: '#eee'
-    }
+    },
+    
 });

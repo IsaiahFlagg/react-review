@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-todo",
-    "slug": "react-todo",
+    "name": "react-review",
+    "slug": "react-review",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,10 +23,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.isaiahflagg.reactreview"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": ""
   }
 }

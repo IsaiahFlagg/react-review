@@ -48,8 +48,8 @@ const styles = StyleSheet.create({
     },
     headerTitle: {
         flexDirection: 'row',
-
-
+        height: 50,
+        paddingTop: 10,
     }
 
 
